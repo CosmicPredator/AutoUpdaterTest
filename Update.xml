@@ -3,5 +3,6 @@
   <version>2.0.0.0</version>
   <url>https://github.com/CosmicPredator/AutoUpdaterTest/releases/latest/download/App.zip</url>
   <changelog>https://github.com/CosmicPredator/AutoUpdaterTest/releases/tag/2.0.0</changelog>
+  <executable>WpfApp1.exe</executable>
   <mandatory>false</mandatory>
 </item>
