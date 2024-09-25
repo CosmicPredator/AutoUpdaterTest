@@ -3,7 +3,7 @@ name: Pull Windows Docker Image and Save as Artifact
 on:
   push:
     branches:
-      - main
+      - stable
 
 jobs:
   pull-docker-image:
