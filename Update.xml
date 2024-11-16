@@ -2,6 +2,7 @@
 <item>
   <version>2.0.0.0</version>
   <url>https://github.com/CosmicPredator/AutoUpdaterTest/releases/latest/download/AniMoe_x64.zip</url>
-  <executable>WpfApp1.exe</executable>
+  <changelog>https://raw.githubusercontent.com/CosmicPredator/AutoUpdaterTest/refs/heads/stable/changelog.md</changelog>
+  <executable>AniMoe.exe</executable>
   <mandatory>false</mandatory>
 </item>
