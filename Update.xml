@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
   <version>2.0.0.0</version>
-  <url>https://github.com/CosmicPredator/AutoUpdaterTest/releases/latest/download/App.zip</url>
+  <url>https://github.com/CosmicPredator/AutoUpdaterTest/releases/latest/download/AniMoe_x64.zip</url>
   <executable>WpfApp1.exe</executable>
   <mandatory>false</mandatory>
 </item>
