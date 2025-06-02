@@ -7,26 +7,22 @@ on:
 
 jobs:
   pull-docker-image:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       # Step 3: Pull the Windows Docker image
-      - name: Pull Windows Docker Image
+      - name: Pull Rocky Linux Docker Image
         run: |
-          docker pull mcr.microsoft.com/windows/servercore:ltsc2022
+          docker pull rockylinux/rockylinux:8.10
 
       # Step 4: Save the Docker image to a .tar file
       - name: Save Docker Image as TAR
         run: |
-          docker save mcr.microsoft.com/windows/servercore:ltsc2022 -o windows-server-image.tar
+          docker save rockylinux/rockylinux:8.10 -o rocky-linux-server-image.tar
 
       # Step 5: Upload the .tar file as an artifact
       - name: Upload Docker Image Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: windows-server-image
-          path: windows-server-image.tar
+          name: rocky-linux-server-image
+          path: rocky-linux-server-image.tar
