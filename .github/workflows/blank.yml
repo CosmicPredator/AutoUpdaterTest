@@ -18,7 +18,7 @@ jobs:
       # Step 4: Save the Docker image to a .tar file
       - name: Save Docker Image as TAR
         run: |
-          docker export nats:latest > nats-image.tar
+          docker export docker.io/library/nats:latest > nats-image.tar
 
       # Step 5: Upload the .tar file as an artifact
       - name: Upload Docker Image Artifact
