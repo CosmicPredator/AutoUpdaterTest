@@ -14,6 +14,10 @@ jobs:
       - name: Pull Rocky Linux Docker Image
         run: |
           docker pull nats:2.11.6
+
+      - name: Docker ls
+        run: |
+          docker image ls
           
       # Step 4: Save the Docker image to a .tar file
       - name: Save Docker Image as TAR
