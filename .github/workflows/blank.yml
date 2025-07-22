@@ -13,16 +13,16 @@ jobs:
       # Step 3: Pull the Windows Docker image
       - name: Pull Rocky Linux Docker Image
         run: |
-          docker pull testcontainers/ryuk:0.12.0
+          docker pull sonarqube:community
           
       # Step 4: Save the Docker image to a .tar file
       - name: Save Docker Image as TAR
         run: |
-          docker save -o ryuk-image.tar testcontainers/ryuk
+          docker save -o sonarqube.tar sonarqube:community
 
       # Step 5: Upload the .tar file as an artifact
       - name: Upload Docker Image Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ryuk-image
-          path: ryuk-image.tar
+          name: sonarqube
+          path: sonarqube.tar
